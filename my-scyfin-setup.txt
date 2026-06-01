@@ -1,0 +1,39 @@
+:: this is how i have my JF branding section setup w/Scyfin and custom no people photos code, 
+:: the people code is in raw form and at bottom so it will override the Scyfin people card code.
+:: Branding code below:
+
+@import url('https://cdn.jsdelivr.net/gh/loof2736/scyfin@latest/CSS/scyfin-theme.css');
+@import url('https://cdn.jsdelivr.net/gh/loof2736/scyfin@latest/CSS/identify-list-view.css');
+@import url('https://cdn.jsdelivr.net/gh/loof2736/scyfin@latest/CSS/theme-oled.css');
+
+#castContent .card.overflowPortraitCard {
+  width: 4.2cm;
+  font-size: 100%;
+}
+
+#castContent .personCard {
+  width: auto;
+}
+
+#castContent .personCard .cardBox {
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+
+#castContent {
+  flex-wrap: wrap;
+  max-height: 10em;
+  margin-bottom: 60px;
+}
+
+div.personCard > :first-child > :first-child {
+  display: none;
+}
+
+.itemDetailPage .cardText {
+  text-align: left;
+}
+
+.itemDetailPage .textActionButton {
+  text-align: left;
+}
